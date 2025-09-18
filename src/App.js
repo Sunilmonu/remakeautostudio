@@ -10,14 +10,16 @@ import AboutUs from './pages/AboutUs';
 import Footer from './components/Footer';
 import PpfDetails from "./pages/ppfdetails";
 import CeramicDetails from "./pages/CeramicDetails";
+import ScrollToTop from './components/ScrollToTop'; // ✅ Import ScrollToTop
 
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/remakeautostudio"> {/* ✅ important for GitHub Pages */}
       <div className="app-container">
         <Navbar />
+        <ScrollToTop /> {/* ✅ Scroll reset on route change */}
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -27,7 +29,6 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/ppf" element={<PpfDetails />} />
             <Route path="/ceramic" element={<CeramicDetails />} />
-
           </Routes>
         </main>
         <Footer />
