@@ -38,7 +38,7 @@ const CeramicDetails = () => {
           {/* ✅ Replaced image with video */}
           <div className="ceramic-benefits-video">
             <video
-              src="/ceramic1.mp4"
+              src={`${process.env.PUBLIC_URL}/videos/ceramic1.mp4`}
               autoPlay
               loop
               muted

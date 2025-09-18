@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="nav-container">
         <Link to="/" className="nav-logo">
           <img 
-            src="/remakelogo.png" 
+            src={`${process.env.PUBLIC_URL}/images/remakelogo.png`} 
             alt="AutoShine Detailing" 
             className="logo-img"
           />
