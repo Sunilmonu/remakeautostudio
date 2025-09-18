@@ -1,6 +1,6 @@
 /* Footer.css */
 .footer {
-  background-color: var(--dark-color);
+  background-color: black;
   color: white;
   padding: 60px 0 20px;
 }
@@ -74,7 +74,7 @@
 }
 
 .social-links a:hover {
-  background-color: var(--primary-color);
+  background-color: rgb(255, 81, 0);
 }
 
 .footer-bottom {

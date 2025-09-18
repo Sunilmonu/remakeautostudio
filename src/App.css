@@ -73,12 +73,12 @@ body {
 }
 
 .primary-btn {
-  background-color: var(--primary-color);
+  background-color:#ff5100;
   color: white;
 }
 
 .primary-btn:hover {
-  background-color: #1765cc;
+  background-color: #ff5100;
 }
 
 .secondary-btn {

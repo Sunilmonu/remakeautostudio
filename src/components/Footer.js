@@ -32,7 +32,7 @@ const Footer = () => {
           <p>123 Auto Care Lane</p>
           <p>Carville, CV 12345</p>
           <p>Phone: (555) 123-4567</p>
-          <p>Email: info@autoshinedetailing.com</p>
+          <p>Email: remakeautostudio@gmail.com</p>
         </div>
         
         <div className="footer-section">
@@ -44,7 +44,7 @@ const Footer = () => {
       </div>
       
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} AutoShine Detailing. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Remake Auto Studio. All rights reserved.</p>
       </div>
     </footer>
   );

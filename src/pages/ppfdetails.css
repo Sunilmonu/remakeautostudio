@@ -1,0 +1,153 @@
+/* Full page wrapper */
+.ppf-page-wrapper {
+  background-color: #000; /* full black background */
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+}
+
+/* Content container */
+.ppf-details-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  color: #fff;
+  line-height: 1.7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+.title {
+  font-size: 3.5rem;
+  color: #e65500;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color:  #e65500;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Paragraphs */
+.intro {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* Benefits list */
+.benefits-list {
+  list-style: disc inside;
+  margin-bottom: 30px;
+}
+
+.benefits-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.benefits-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color:  #e65500;
+  font-weight: bold;
+}
+
+/* Advantages cards */
+.advantages-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 50px 0;
+}
+
+.adv-card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.adv-card h3 {
+  color:  #e65500;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.adv-card p {
+  font-size: 1rem;
+}
+
+.adv-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* CTA Button */
+.cta-btn {
+  display: inline-block;
+  background:  #e65500;
+  color: #000;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #ffb84d;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ppf-details-page {
+    padding: 40px 15px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .advantages-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.benefits-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.benefits-text {
+  flex: 1;
+}
+
+.benefits-video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-video video {
+  max-width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}

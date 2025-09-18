@@ -8,6 +8,9 @@ import Gallery from './pages/Gallery';
 import BookNow from './pages/BookNow';
 import AboutUs from './pages/AboutUs';
 import Footer from './components/Footer';
+import PpfDetails from "./pages/ppfdetails";
+import CeramicDetails from "./pages/CeramicDetails";
+
 import './App.css';
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/book-now" element={<BookNow />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/ppf" element={<PpfDetails />} />
+            <Route path="/ceramic" element={<CeramicDetails />} />
+
           </Routes>
         </main>
         <Footer />
