@@ -1,4 +1,11 @@
 /* BookNow.css */
+
+.book-now-page{
+  background-color: black;
+}
+.page-header h1 p{
+  color: white;
+}
 .booking-container {
   display: flex;
   flex-wrap: wrap;
@@ -14,7 +21,7 @@
 }
 
 .booking-form {
-  background-color: white;
+  background-color: rgb(65, 65, 65);
   padding: 30px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -107,4 +114,9 @@
   .form-row {
     flex-direction: column;
   }
+}
+.contact-info .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }

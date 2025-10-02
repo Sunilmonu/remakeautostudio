@@ -151,3 +151,18 @@
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+
+.ppf-images-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.ppf-image {
+ flex: 1;
+  max-width: 32%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}

@@ -10,6 +10,8 @@ import AboutUs from './pages/AboutUs';
 import Footer from './components/Footer';
 import PpfDetails from "./pages/ppfdetails";
 import CeramicDetails from "./pages/CeramicDetails";
+import SunfilmDetails from "./pages/SunfilmDetails";
+import DetailingDetails from "./pages/DetailingDetails";
 import ScrollToTop from './components/ScrollToTop'; // ✅ Import ScrollToTop
 
 import './App.css';
@@ -29,6 +31,8 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/ppf" element={<PpfDetails />} />
             <Route path="/ceramic" element={<CeramicDetails />} />
+            <Route path="/sunfilm" element={<SunfilmDetails />} />
+            <Route path="/detailing" element={<DetailingDetails />} />
           </Routes>
         </main>
         <Footer />

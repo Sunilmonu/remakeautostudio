@@ -106,3 +106,36 @@
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
+/* Benefits Images Section */
+.ceramic-benefits-images {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.ceramic-benefits-images img {
+  flex: 1;
+  max-width: 32%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  height: 220px; /* adjust height as needed */
+}
+/* Horizontal Images Section */
+.ceramic-images-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.ceramic-image {
+  flex: 1;
+  max-width: 32%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}

@@ -17,24 +17,23 @@ const PpfDetails = () => {
           glossy finish.
         </p>
 
-        {/* Benefits Section with Video */}
-        <div className="benefits-section">
-          <div className="benefits-text">
-            <h2 className="subtitle">Benefits of PPF</h2>
-            <ul className="benefits-list">
-              <li>Shields against scratches, rock chips, and stains</li>
-              <li>Protects from UV rays and oxidation</li>
-              <li>Keeps your car looking glossy and new</li>
-              <li>Maintains resale value by preserving paint quality</li>
-              <li>Self-healing properties for minor scratches</li>
-            </ul>
-          </div>
-          <div className="benefits-video">
-            <video autoPlay loop muted playsInline>
-              <source src={`${process.env.PUBLIC_URL}/videos/ppf.mp4`} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+        {/* ✅ Replaced Benefits Section with Images */}
+        <div className="ppf-images-section">
+          <img
+            src={`${process.env.PUBLIC_URL}/images/ppf1.jpg`}
+            alt="PPF Example 1"
+            className="ppf-image"
+          />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/ppf2.jpg`}
+            alt="PPF Example 2"
+            className="ppf-image"
+          />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/ppf3.jpg`}
+            alt="PPF Example 3"
+            className="ppf-image"
+          />
         </div>
 
         <h2 className="subtitle">Why Choose Our PPF?</h2>
@@ -50,11 +49,7 @@ const PpfDetails = () => {
           <div className="adv-card">
             <h3>Self-Healing</h3>
             <p>
-              Paint Protection Film (PPF) features advanced self-healing
-              technology that repairs minor scratches, swirl marks, and abrasions
-              when exposed to heat or sunlight. This ensures your car maintains a
-              smooth, glossy finish without constant polishing, keeping it
-              showroom-fresh even under daily wear.
+            Paint Protection Film (PPF) features advanced self-healing technology that repairs minor scratches, swirl marks, and abrasions from heat or sunlight, keeping your car smooth, glossy, and showroom-fresh without constant polishing.
             </p>
           </div>
           <div className="adv-card">

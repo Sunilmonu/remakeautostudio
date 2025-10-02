@@ -1,7 +1,7 @@
 // pages/CeramicDetails.js
 import React from "react";
 import { Link } from "react-router-dom";
-import "./ceramicdetails.css"; // Now using a dedicated CSS
+import "./ceramicdetails.css"; // Using dedicated CSS
 
 const CeramicDetails = () => {
   return (
@@ -16,36 +16,23 @@ const CeramicDetails = () => {
           contaminants, and safeguards your car from minor scratches.
         </p>
 
-        <div className="ceramic-benefits-section">
-          <div className="ceramic-benefits-text">
-            <h2 className="ceramic-subtitle">Benefits of Ceramic Coating</h2>
-            <ul className="ceramic-benefits-list">
-              <li>
-                Provides long-lasting paint protection against environmental
-                damage
-              </li>
-              <li>
-                Repels water, dust, dirt, and chemical stains for easier cleaning
-              </li>
-              <li>
-                Enhances gloss, depth, and shine for a showroom finish
-              </li>
-              <li>Reduces minor swirl marks and surface imperfections</li>
-              <li>Protects against UV damage and oxidation</li>
-            </ul>
-          </div>
-
-          {/* ✅ Replaced image with video */}
-          <div className="ceramic-benefits-video">
-            <video
-              src={`${process.env.PUBLIC_URL}/videos/ceramic1.mp4`}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="ceramic-video"
-            />
-          </div>
+        {/* ✅ Benefits Section with 3 Horizontal Images */}
+        <div className="ceramic-images-section">
+          <img
+            src={`${process.env.PUBLIC_URL}/images/ceramic1.jpg`}
+            alt="Ceramic Example 1"
+            className="ceramic-image"
+          />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/ceramic2.jpg`}
+            alt="Ceramic Example 2"
+            className="ceramic-image"
+          />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/ceramic3.jpg`}
+            alt="Ceramic Example 3"
+            className="ceramic-image"
+          />
         </div>
 
         <h2 className="ceramic-subtitle">Why Choose Our Ceramic Coating?</h2>
@@ -56,6 +43,39 @@ const CeramicDetails = () => {
           flawless finish, giving your car a deep, reflective shine while
           protecting it from everyday wear, weather, and contaminants.
         </p>
+
+        <h2 className="ceramic-subtitle">Advantages of Ceramic Coating</h2>
+        <div className="advantages-section">
+          <div className="adv-card">
+            <h3>Durability</h3>
+            <p>
+              Ceramic coating is engineered to withstand road debris, chemicals,
+              and weather conditions, providing long-lasting protection without
+              frequent reapplication.
+            </p>
+          </div>
+          <div className="adv-card">
+            <h3>Gloss & Shine</h3>
+            <p>
+              Enhances the depth and gloss of your paint, keeping your car
+              looking showroom-fresh and reflective for years.
+            </p>
+          </div>
+          <div className="adv-card">
+            <h3>UV Protection</h3>
+            <p>
+              Blocks harmful UV rays that can fade or oxidize your car's paint,
+              preserving its color and finish.
+            </p>
+          </div>
+          <div className="adv-card">
+            <h3>Easy Maintenance</h3>
+            <p>
+              Reduces the accumulation of dirt and contaminants, making your
+              vehicle easier to clean and maintain.
+            </p>
+          </div>
+        </div>
 
         <Link to="/book-now" className="ceramic-cta-btn">
           Book Your Ceramic Coating

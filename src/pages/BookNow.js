@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './BookNow.css';
 
+
 const BookNow = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -179,11 +180,12 @@ const BookNow = () => {
             <p>Please arrive 10 minutes before your scheduled appointment time.</p>
             
             <div className="contact-info">
-              <h4>Contact Us</h4>
-              <p>📞 (555) 123-4567</p>
-              <p>✉️ info@autoshinedetailing.com</p>
-              <p>📍 123 Auto Care Lane, Carville, CV 12345</p>
-            </div>
+  <h4>Contact Us</h4>
+  <p><img src={`${process.env.PUBLIC_URL}/icons/phone.svg`} alt="Phone" className="icon" /> +91-72592 54806</p>
+  <p><img src={`${process.env.PUBLIC_URL}/icons/email.svg`} alt="Email" className="icon" /> remakeautostudio@gmail.com</p>
+  <p><img src={`${process.env.PUBLIC_URL}/icons/location.svg`} alt="Location" className="icon" /> 14, Hormavu Agara Main Road, Bengaluru</p>
+</div>
+
           </div>
         </div>
       </div>
