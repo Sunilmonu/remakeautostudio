@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/remakeautostudio/static/css/main.b3b4e014.css",
-    "main.js": "/remakeautostudio/static/js/main.5fda2477.js",
+    "main.css": "/remakeautostudio/static/css/main.14869f8f.css",
+    "main.js": "/remakeautostudio/static/js/main.752844c3.js",
     "index.html": "/remakeautostudio/index.html",
-    "main.b3b4e014.css.map": "/remakeautostudio/static/css/main.b3b4e014.css.map",
-    "main.5fda2477.js.map": "/remakeautostudio/static/js/main.5fda2477.js.map"
+    "main.14869f8f.css.map": "/remakeautostudio/static/css/main.14869f8f.css.map",
+    "main.752844c3.js.map": "/remakeautostudio/static/js/main.752844c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3b4e014.css",
-    "static/js/main.5fda2477.js"
+    "static/css/main.14869f8f.css",
+    "static/js/main.752844c3.js"
   ]
 }
