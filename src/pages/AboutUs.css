@@ -1,4 +1,10 @@
 /* AboutUs.css */
+.about-us-page{
+  background-color: black;
+}
+.page-header .h1{
+color: #ffffff;
+}
 .about-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -107,32 +113,45 @@
   line-height: 1.6;
 }
 
+.values-section {
+  padding: 50px 20px;
+  background-color: #ffffff; /* optional dark background */
+  color: #303030;
+  text-align: center;
+}
 .values-section h2 {
   text-align: center;
   margin-bottom: 40px;
 }
 
 .values-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
 }
 
 .value-item {
-  background-color: white;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 30px;
-  text-align: center;
+    flex: 1 1 200px;
+  max-width: 250px;
 }
 
 .value-icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
+ width: 80px;        /* same width for all icons */
+  height: 80px;       /* same height for all icons */
+  margin: 0 auto 15px
 }
 
 .value-item h3 {
   font-size: 1.3rem;
   margin-bottom: 15px;
   color: var(--dark-color);
+}
+
+
+.value-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* keeps aspect ratio */
 }
